@@ -122,7 +122,7 @@ such:
     class OrderAdmin(admin.ModelAdmin):
         # This will generate a ModelForm
         form = autocomplete_light.modelform_factory(Order)
-    admin.site.register(Order)
+    admin.site.register(Order, OrderAdmin)
 
 Refer to the :doc:`form` documentation for other ways of making forms, it is
 the second chapter of the :ref:`the reference documentation <reference>`.
